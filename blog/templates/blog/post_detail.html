@@ -20,6 +20,6 @@
   <hr />
 
   <a href = "{% url "blog.views.post_list" %}">글목록으로</a>
-<div class="fb-comments" data-href="http://djangoazurewebapptest.azurewebsites.net/blog/" data-numposts="5"></div>
+<div class="fb-comments" data-href="{{ request.build_absolute_uri }}{% url "blog.views.post_detail" post.pk %}" data-numposts="5"></div>
 
 {% endblock %}
