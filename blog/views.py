@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 # Create your views here.
 
@@ -14,4 +15,3 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {
         'post': post,
     })
-    
