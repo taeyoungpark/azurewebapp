@@ -10,6 +10,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+
   <h1>{{ post.title }}</h1>
   <img src = "{{ post.photo.url }}" />
   <hr />
@@ -19,6 +20,6 @@
   <hr />
 
   <a href = "{% url "blog.views.post_list" %}">글목록으로</a>
-<div class="fb-comments" data-href="{% url "blog.views.post_detail" post.pk %}" data-numposts="5"></div>
+<div class="fb-comments" data-href="http://djangoazurewebapptest.azurewebsites.net/blog/" data-numposts="5"></div>
 
 {% endblock %}
